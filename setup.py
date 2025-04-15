@@ -28,7 +28,7 @@ setup(
         'multiprocessing-utils',
         'cameralib @ git+https://github.com/isarandi/cameralib.git',
         'boxlib @ git+https://github.com/isarandi/boxlib.git',
-        'rlemasklib @ git+https://github.com/isarandi/rlemasklib.git',
+        'rlemasklib @ https://github.com/isarandi/rlemasklib/archive/c9774716c9943459d8beb8cf3b3b4d5b9fe4169c.zip',
         'simplepyutils @ git+https://github.com/isarandi/simplepyutils.git',
     ]
 )
