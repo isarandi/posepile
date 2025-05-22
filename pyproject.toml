@@ -1,0 +1,43 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posepile"
+version = "0.2.0"
+description = "Dataset collection for 3D human pose and shape estimation."
+authors = [
+    { name = "István Sárándi", email = "istvan.sarandi@uni-tuebingen.de" }
+]
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+
+dependencies = [
+    'tensorflow==2.15',
+    'numpy<2.0',
+    'opencv-python',
+    'transforms3d',
+    'more-itertools',
+    'pycocotools',
+    'pandas',
+    'scipy',
+    'cameravision',
+    'boxlib',
+    'rlemasklib',
+    'simplepyutils',
+    'barecat',
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 99
+skip-string-normalization = true
